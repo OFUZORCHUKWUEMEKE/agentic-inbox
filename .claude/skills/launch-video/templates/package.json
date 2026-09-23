@@ -1,0 +1,36 @@
+{
+  "name": "PROJECT-video",
+  "version": "1.0.0",
+  "description": "Launch video, rendered from React with Remotion",
+  "license": "Apache-2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "remotion studio",
+    "build": "remotion bundle",
+    "lint": "eslint src && tsc",
+    "render": "remotion render Launch out/launch.mp4 --codec h264 --image-format png --crf 18",
+    "render:teaser": "remotion render Teaser out/teaser.mp4 --codec h264 --image-format png --crf 18",
+    "upgrade": "remotion upgrade"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.527",
+    "@remotion/google-fonts": "4.0.527",
+    "@remotion/media": "4.0.527",
+    "@remotion/sfx": "4.0.527",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.527"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.527",
+    "@types/react": "19.2.7",
+    "@types/web": "0.0.166",
+    "eslint": "9.19.0",
+    "prettier": "3.4.2",
+    "typescript": "5.9.3"
+  },
+  "sideEffects": [
+    "*.css"
+  ]
+}
