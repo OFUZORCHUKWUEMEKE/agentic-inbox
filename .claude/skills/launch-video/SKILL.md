@@ -10,9 +10,12 @@ Everything animates from the frame number, so the whole film is deterministic
 and re-renderable — which is why it belongs in the repo next to the thing it
 advertises, not in a video editor.
 
-The reference implementation is `video/` in this repository. Read it when you
-want to see any of this working; it renders, and its comments explain the
-reasoning behind the non-obvious parts.
+A worked reference exists at `video/` in **cloudflare/agentic-inbox** — the
+project this skill was extracted from. If that directory is present in the
+current checkout, read it: it renders, and its comments explain the reasoning
+behind the non-obvious parts. If you are in a different project, it is on
+GitHub, and `templates/` here already carries the parts worth copying
+verbatim, so do not block on reaching it.
 
 ## The shape of the deliverable
 
