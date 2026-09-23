@@ -93,6 +93,18 @@ Any user who passes the shared Cloudflare Access policy can access all mailboxes
                      └──────────────────┘     └─────────────────┘
 ```
 
+## Launch video
+
+The source for the project's launch film lives in [`video/`](./video) — a standalone [Remotion](https://www.remotion.dev/) project that renders React components into an MP4. It rebuilds the app's UI in React rather than using screenshots, and its three agent tool calls are the real names from `workers/agent/index.ts`.
+
+It has its own dependencies and lockfile and is excluded from the Workers build and typecheck:
+
+```bash
+cd video && npm ci && npm run dev
+```
+
+See [video/README.md](./video/README.md) for the cut, the scene breakdown, and how to render it.
+
 ## License
 
 Apache 2.0 -- see [LICENSE](LICENSE).
